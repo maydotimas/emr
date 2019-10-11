@@ -8,6 +8,7 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 const Dashboard = () => import('@/views/Dashboard')
 
 const Patients = () => import('@/views/patients/Patients')
+const NewPatient = () => import('@/views/patients/NewPatient')
 
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
@@ -87,6 +88,11 @@ function configRoutes() {
               path: '/',
               name: 'Patient Management',
               component: Patients
+            },
+            {
+              path: '/patients/new',
+              name: 'New Patient',
+              component: NewPatient
             },
             {
               path: 'typography',
