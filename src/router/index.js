@@ -7,6 +7,8 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 // Views
 const Dashboard = () => import('@/views/Dashboard')
 
+const Patients = () => import('@/views/patients/Patients')
+
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
 
@@ -64,14 +66,34 @@ function configRoutes() {
   return [
     {
       path: '/',
-      redirect: '/dashboard',
-      name: 'Home',
+      name: 'Admin',
+      redirect: 'dashboard',
       component: DefaultContainer,
       children: [
         {
           path: 'dashboard',
           name: 'Dashboard',
           component: Dashboard
+        },
+        {
+          path: 'patients',
+          redirect: '/patients',
+          name: 'Patients',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '/',
+              name: 'Patient Management',
+              component: Patients
+            },
+            {
+              path: 'typography',
+              name: 'Typography',
+              component: Typography
+            }
+          ]
         },
         {
           path: 'theme',
@@ -300,8 +322,8 @@ function configRoutes() {
       ]
     },
     {
-      path: '/pages',
-      redirect: '/pages/404',
+      path: '/',
+      redirect: '/login',
       name: 'Pages',
       component: {
         render (c) { return c('router-view') }

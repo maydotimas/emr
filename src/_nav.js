@@ -11,7 +11,7 @@ export default {
     },
     {
       title: true,
-      name: 'Theme',
+      name: 'Transactions',
       class: '',
       wrapper: {
         element: '',
@@ -19,14 +19,94 @@ export default {
       }
     },
     {
-      name: 'Colors',
-      url: '/theme/colors',
-      icon: 'icon-drop'
+      name: 'Patients',
+      url: '/patients',
+      icon: 'fa fa-wheelchair'
     },
     {
-      name: 'Typography',
+      name: 'Consultations',
+      url: '/theme/colors',
+      icon: 'fa fa-user-md'
+    },
+    {
+      name: 'Diagnosis',
+      url: '/theme/colors',
+      icon: 'fa fa-heartbeat'
+    },
+    {
+      name: 'Prescriptions',
       url: '/theme/typography',
-      icon: 'icon-pencil'
+      icon: 'fa fa-medkit'
+    },
+    {
+      title: true,
+      name: 'Management',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
+    },
+    {
+      name: 'Doctors',
+      url: '/theme/colors',
+      icon: 'fa fa-user-md'
+    },
+    {
+      name: 'Specialization',
+      url: '/theme/colors',
+      icon: 'fa fa-user-md'
+    },
+    {
+      name: 'Diseases',
+      url: '/theme/colors',
+      icon: 'fa fa-bed'
+    },
+    {
+      name: 'Medicines',
+      url: '/theme/colors',
+      icon: 'fa fa-medkit'
+    },
+    {
+      title: true,
+      name: 'Reports',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
+    },
+
+    {
+      name: 'Patient Consultation',
+      url: '/theme/colors',
+      icon: 'fa fa-medkit'
+    },
+    {
+      name: 'Trending Diseases',
+      url: '/theme/colors',
+      icon: 'fa fa-medkit'
+    },
+
+
+    {
+      title: true,
+      name: 'Admin',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
+    },
+    {
+      name: 'Hospitals',
+      url: '/theme/colors',
+      icon: 'fa fa-user-md'
+    },
+    {
+      name: 'Users',
+      url: '/theme/colors',
+      icon: 'fa fa-bed'
     },
     {
       title: true,
@@ -264,7 +344,7 @@ export default {
         variant: 'secondary',
         text: 'NEW'
       },
-      attributes: { disabled: true },
+      attributes: {disabled: true},
     },
     {
       name: 'Download CoreUI',
@@ -272,14 +352,14 @@ export default {
       icon: 'icon-cloud-download',
       class: 'mt-auto',
       variant: 'success',
-      attributes: { target: '_blank', rel: 'noopener' }
+      attributes: {target: '_blank', rel: 'noopener'}
     },
     {
       name: 'Try CoreUI PRO',
       url: 'http://coreui.io/pro/vue/',
       icon: 'icon-layers',
       variant: 'danger',
-      attributes: { target: '_blank', rel: 'noopener' }
+      attributes: {target: '_blank', rel: 'noopener'}
     },
   ]
 }
